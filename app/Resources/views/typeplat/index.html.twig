@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>La liste des types des plats</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for typeplat in typeplats %}
+            <tr>
+                <td><a href="{{ path('typeplat_show', { 'id': typeplat.id }) }}">{{ typeplat.id }}</a></td>
+                <td>{{ typeplat.nom }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('typeplat_show', { 'id': typeplat.id }) }}">afficher</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('typeplat_edit', { 'id': typeplat.id }) }}">modifier</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('typeplat_new') }}">Ajouter un nouveau type</a>
+        </li>
+    </ul>
+{% endblock %}

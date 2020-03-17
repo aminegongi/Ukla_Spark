@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Spécialité</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ specialite.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ specialite.nom }}</td>
+            </tr>
+            <tr>
+                <th>Image</th>
+                <td><img src="{{ asset('specialite/')~specialite.image }}" width="50"></td>
+            </tr>
+            <tr>
+                <th>Déscription</th>
+                <td>{{ specialite.description }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('specialite_index') }}">Retour à la liste</a>
+        </li>
+        <li>
+            <a href="{{ path('specialite_edit', { 'id': specialite.id }) }}">modifier</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="supprimer">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

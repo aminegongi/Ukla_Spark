@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>La liste des plats </h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Specialite</th>
+                <th>Déscription</th>
+                <th>Images</th>
+                <th>Difficulte</th>
+                <th>Temps de preparation</th>
+                <th>Temps de cuisson</th>
+                <th>Type</th>
+                <th>Meteo</th>
+                <th>Preparation</th>
+                <th>A éviter</th>
+                <th>A reccomander</th>
+                <th>Nombre portion</th>
+                <th>Nom portion</th>
+                <th>Note </th>
+                <th>Ustensilles</th>
+                <th>Notes</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for plat in plats %}
+            <tr>
+                <td><a href="{{ path('plat_show', { 'id': plat.id }) }}">{{ plat.id }}</a></td>
+                <td>{{ plat.nom }}</td>
+                <td>{{ plat.description }}</td>
+                <td>{{ plat.specialite.nom }}</td>
+                <td>{{ plat.difficulte }}</td>
+                <td><img src="{{ asset('imagePlats/')~plat.image0 }}" width="50">
+                    <img src="{{ asset('imagePlats/')~plat.image1 }}" width="50">
+                    <img src="{{ asset('imagePlats/')~plat.image2 }}" width="50">
+                    <img src="{{ asset('imagePlats/')~plat.image3 }}" width="50">
+                    <img src="{{ asset('imagePlats/')~plat.image4 }}" width="50">
+                    <img src="{{ asset('imagePlats/')~plat.image5 }}" width="50"></td>
+                <td>{{ plat.tempsPrepa }}</td>
+                <td>{{ plat.tempsCuisson }}</td>
+                <td>{{ plat.type.nom }}</td>
+                <td>{{ plat.meteo }}</td>
+                <td>{{ plat.preparation }}</td>
+                <td>{{ plat.aEviter }}</td>
+                <td>{{ plat.aReccomander }}</td>
+                <td>{{ plat.nbrPortion }}</td>
+                <td>{{ plat.nomPortion }}</td>
+                {# <td>{{ plat.n.nom }}</td>
+                <td>{{ plats_ustensilles.ustensilles }}</td>#}
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('plat_show', { 'id': plat.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('plat_edit', { 'id': plat.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('plat_new') }}">Create a new plat</a>
+        </li>
+    </ul>
+{% endblock %}

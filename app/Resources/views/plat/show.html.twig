@@ -1,0 +1,115 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Plat</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ plat.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ plat.nom }}</td>
+            </tr>
+            <tr>
+                <th>Spécialité</th>
+                <td>{{ plat.specialite.nom }}</td>
+            </tr>
+            <tr>
+                <th>Image</th>
+                <td>
+                <img src="{{ asset('imagePlats/')~plat.image0 }}" width="50">
+                <img src="{{ asset('imagePlats/')~plat.image1 }}" width="50">
+                <img src="{{ asset('imagePlats/')~plat.image2 }}" width="50">
+                <img src="{{ asset('imagePlats/')~plat.image3 }}" width="50">
+                <img src="{{ asset('imagePlats/')~plat.image4 }}" width="50">
+                <img src="{{ asset('imagePlats/')~plat.image5 }}" width="50">
+                </td>
+            </tr>
+            <tr>
+                <th>Déscription</th>
+                <td>{{ plat.description }}</td>
+            </tr>
+            <tr>
+                <th>Difficulte</th>
+                <td>{{ plat.difficulte }}</td>
+            </tr>
+            <tr>
+                <th>Temps de préparation</th>
+                <td>{{ plat.tempsPrepa }}</td>
+            </tr>
+            <tr>
+                <th>Temps de cuisson</th>
+                <td>{{ plat.tempsCuisson }}</td>
+            </tr>
+            <tr>
+                <th>Type</th>
+                <td>{{ plat.type.nom }}</td>
+            </tr>
+            <tr>
+                <th>Healthy food rate</th>
+                <td>{{ plat.hfr }}</td>
+            </tr>
+            <tr>
+                <th>Meteo</th>
+                <td>{{ plat.meteo }}</td>
+            </tr>
+            <tr>
+                <th>Humeur</th>
+                <td>{{ plat.humeur }}</td>
+            </tr>
+            <tr>
+                <th>Préparation</th>
+                <td>{{ plat.preparation }}</td>
+            </tr>
+            <tr>
+                <th>A éviter</th>
+                <td>{{ plat.aEviter }}</td>
+            </tr>
+            <tr>
+                <th>A reccomander</th>
+                <td>{{ plat.aReccomander }}</td>
+            </tr>
+            <tr>
+                <th>Nombre portion</th>
+                <td>{{ plat.nbrPortion }}</td>
+            </tr>
+            <tr>
+                <th>Nom portion</th>
+                <td>{{ plat.nomPortion }}</td>
+            </tr>
+            <tr>
+                <th>Ingrédients</th>
+                <td>{{ plat.ingredients }}</td>
+            </tr>
+            {#<tr>
+                {% for plat in surveyWithProjects %}
+                {% for project in survey.projects %}
+                <th>Note</th>
+                <td>{{ plat.note.nom }}</td>
+                {% endfor %}
+                {% endfor %}
+            </tr>#}
+           {# <tr>
+                <th>Ustensilles</th>
+                <td>{{ plat.ustensilles }}</td>
+            </tr>#}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('plat_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('plat_edit', { 'id': plat.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}
