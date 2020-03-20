@@ -1,0 +1,48 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+
+    <div class="form-group">
+        <label>E-Mail</label>
+        {{ form_widget(form.email, {'attr':{'class':'au-input au-input--full', 'name':'email', 'placeholder':''}}) }}
+    </div>
+    <div class="form-group">
+        <label>Username</label>
+        {{ form_widget(form.username, {'attr':{'class':'au-input au-input--full', 'name':'username', 'placeholder':''}}) }}
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        {{ form_widget(form.plainPassword.first, {'attr':{'class':'au-input au-input--full','type':'password', 'placeholder':''}}) }}
+    </div>
+    <div class="form-group">
+        <label>Password confirmation</label>
+        {{ form_widget(form.plainPassword.second, {'attr':{'class':'au-input au-input--full','type':'password', 'placeholder':''}}) }}
+    </div>
+    <div class="form-group">
+        <label>Nom</label>
+        {{ form_widget(form.nom, {'attr':{'class':'au-input au-input--full','name':'nom', 'placeholder':''}}) }}
+    </div>
+    <div class="form-group">
+        <label>Prenom</label>
+        {{ form_widget(form.prenom, {'attr':{'class':'au-input au-input--full','name':'prenom', 'placeholder':''}}) }}
+    </div>
+    <div class="form-group">
+        <label>Sexe</label>
+        {{ form_widget(form.sexe, {'attr':{'class':'form-control','name':'sexe', 'placeholder':''}}) }}
+    </div>
+    <div class="form-group">
+        <label>Age</label>
+        {{ form_widget(form.age, {'attr':{'class':'au-input au-input--full','name':'nom', 'placeholder':''}}) }}
+    </div><div class="form-group">
+        <label>N° Tel</label>
+        {{ form_widget(form.numTel, {'attr':{'class':'au-input au-input--full','name':'numTel', 'placeholder':'+216'}}) }}
+    </div>
+    <div class="form-group">
+        <label>Photo</label>
+        {{ form_widget(form.photo, {'attr':{'class':'','name':'photo', 'placeholder':''}}) }}
+    </div>
+
+        <div>
+            <input type="submit" class="au-btn au-btn--block au-btn--green m-b-20" value="{{ 'register'|trans }}" />
+        </div>
+{{ form_end(form) }}

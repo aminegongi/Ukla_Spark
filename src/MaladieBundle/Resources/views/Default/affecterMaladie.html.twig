@@ -1,0 +1,8 @@
+<form method="post">
+    <select name="select" id="select" class="form-control">
+        {% for maladie in maladies %}
+        <option value="{{ maladie.id }}">{{maladie.nomMaladie}}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" name="confirmer">
+</form>

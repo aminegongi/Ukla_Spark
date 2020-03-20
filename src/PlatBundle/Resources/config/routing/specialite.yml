@@ -1,0 +1,24 @@
+specialite_index:
+    path:     /
+    defaults: { _controller: "PlatBundle:specialite:index" }
+    methods:  GET
+
+specialite_show:
+    path:     /{id}/show
+    defaults: { _controller: "PlatBundle:specialite:show" }
+    methods:  GET
+
+specialite_new:
+    path:     /new
+    defaults: { _controller: "PlatBundle:specialite:new" }
+    methods:  [GET, POST]
+
+specialite_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PlatBundle:specialite:edit" }
+    methods:  [GET, POST]
+
+specialite_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PlatBundle:specialite:delete" }
+    methods:  DELETE

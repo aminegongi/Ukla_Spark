@@ -1,0 +1,24 @@
+ustensiles_index:
+    path:     /
+    defaults: { _controller: "PlatBundle:Ustensiles:index" }
+    methods:  GET
+
+ustensiles_show:
+    path:     /{id}/show
+    defaults: { _controller: "PlatBundle:Ustensiles:show" }
+    methods:  GET
+
+ustensiles_new:
+    path:     /new
+    defaults: { _controller: "PlatBundle:Ustensiles:new" }
+    methods:  [GET, POST]
+
+ustensiles_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PlatBundle:Ustensiles:edit" }
+    methods:  [GET, POST]
+
+ustensiles_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PlatBundle:Ustensiles:delete" }
+    methods:  DELETE

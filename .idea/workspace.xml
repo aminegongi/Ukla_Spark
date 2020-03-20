@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="06e3caf5-ef5d-4482-8597-2ca8b3bcceb3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="cc5434ab-6b6a-41c9-bc97-44eb79019cad" />
+    </execution>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1XtXWPBPyCvvri78w40pMrCiwei" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spark" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="c require friendsofsymfony/user-bundle" />
+      <command value="c update" />
+      <command value="s server:run" />
+      <command value="s doctrine:generate:form" />
+      <command value="s doctrine:generate:form UserBundle:User" />
+      <command value="s fos:user:promote yessine ROLE_ADMIN" />
+      <command value="s generate:controller" />
+      <command value="s doctrine:generate:form Maladie" />
+      <command value="s doctrine:generate:form MaladieBundleMaladie" />
+      <command value="s doctrine:generate:form MaladieBundle:Maladie" />
+      <command value="s doctrine:generate:entity maladieBundle:MaladieUser" />
+      <command value="s doctrine:generate:form MaladieBundle:MaladieUser" />
+      <command value="s generate:bundle" />
+      <command value="c dump-autoload" />
+      <command value="s doctrine:database:create" />
+      <command value="s doctrine:generate:entities PlatBundle:Note" />
+      <command value="s doctrine:generate:entities PlatBundle:Ustensiles" />
+      <command value="s doctrine:generate:entities PlatBundle:Plat" />
+      <command value="s doctrine:schema:update --force" />
+      <command value="s doctrine:generate:entity" />
+      <command value="s doctrine:generate:crud" />
+      <command value="s cache:clear" />
+      <command value="s debug:router" />
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="06e3caf5-ef5d-4482-8597-2ca8b3bcceb3" name="Default Changelist" comment="" />
+      <created>1581866395296</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581866395296</updated>
+      <workItem from="1581866624236" duration="14270000" />
+      <workItem from="1582301833826" duration="5381000" />
+      <workItem from="1582312377733" duration="1598000" />
+      <workItem from="1582313993997" duration="11005000" />
+      <workItem from="1582576896280" duration="36000" />
+      <workItem from="1584362436229" duration="6848000" />
+      <workItem from="1584370256453" duration="10076000" />
+      <workItem from="1584633146077" duration="20286000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="441" y="16" key="#com.intellij.ide.util.MemberChooser" timestamp="1584650920186">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="441" y="16" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1584650920186" />
+    <state x="18" y="67" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584652128590">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="18" y="67" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584652128590" />
+    <state x="363" y="235" key="ComposerCompositePathDialog" timestamp="1584633223008">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="235" key="ComposerCompositePathDialog/0.0.1366.728@0.0.1366.728" timestamp="1584633223008" />
+    <state x="413" y="48" key="FileChooserDialogImpl" timestamp="1584633621043">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="48" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584633621043" />
+    <state width="1311" height="132" key="GridCell.Tab.0.bottom" timestamp="1584655821576">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1311" height="132" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584655821576" />
+    <state width="1311" height="132" key="GridCell.Tab.0.center" timestamp="1584655821576">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1311" height="132" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584655821576" />
+    <state width="1311" height="132" key="GridCell.Tab.0.left" timestamp="1584655821576">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1311" height="132" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584655821576" />
+    <state width="1311" height="132" key="GridCell.Tab.0.right" timestamp="1584655821576">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1311" height="132" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584655821576" />
+    <state x="71" y="0" key="SettingsEditor" timestamp="1584633268068">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="71" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584633268068" />
+    <state width="623" height="498" key="SwitcherDM" timestamp="1584649154210">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="623" height="498" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1584649154210" />
+    <state x="409" y="263" key="SymfonyPathDialog" timestamp="1584633263688">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="409" y="263" key="SymfonyPathDialog/0.0.1366.728@0.0.1366.728" timestamp="1584633263688" />
+    <state x="319" y="151" key="com.intellij.ide.util.TipDialog" timestamp="1584633160795">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="319" y="151" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584633160795" />
+    <state x="255" y="159" width="840" height="1034" key="run.anything.popup" timestamp="1584655821580">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="255" y="159" width="840" height="1034" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1584655821580" />
+  </component>
+</project>

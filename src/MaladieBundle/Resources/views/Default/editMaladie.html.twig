@@ -1,0 +1,72 @@
+{% extends "backOffice/index.html.twig" %}
+{% block body %}
+    <!-- Fontfaces CSS-->
+    <link href="{{ asset('css/font-face.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('vendor/font-awesome-5/css/fontawesome-all.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="{{ asset('vendor/bootstrap-4.1/bootstrap.min.css') }}" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    {#<link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">#}
+    <link href="{{ asset('vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('vendor/wow/animate.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('vendor/css-hamburgers/hamburgers.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('vendor/slick/slick.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('vendor/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="{{ asset('css/theme.css') }}" rel="stylesheet" media="all">
+
+
+
+    <div align="center" >
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <strong>Modification</strong>
+            </div>
+            <div class="card-body card-block">
+                <div action="" method="post" class="form-horizontal">
+                    {{ form_start(form) }}
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="hf-email" class=" form-control-label">Nom</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            {{ form_widget(form.nomMaladie, {'attr':{'class': 'form-control'}}) }}
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="hf-password" class=" form-control-label">Description</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            {{ form_widget(form.description, {'attr':{'class': 'form-control'}}) }}
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="hf-password" class=" form-control-label">Type</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            {{ form_widget(form.type, {'attr':{'class': 'form-control'}}) }}
+                        </div>
+
+                    </div>
+
+                </div>
+                {{ form_widget(form.Modifier, {'attr':{'class': 'btn btn-primary btn-sm'}}) }}
+                {{ form_end(form) }}
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

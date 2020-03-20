@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Ajouter une spécialité</h1>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+    <input type="file" name="image" />
+    <br>
+        <input type="submit" value="Create" />
+    {{ form_end(form) }}
+
+    <ul>
+        <li>
+            <a href="{{ path('specialite_index') }}">Back to the list</a>
+        </li>
+    </ul>
+{% endblock %}
+
+
+
+
+

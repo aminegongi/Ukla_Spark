@@ -1,0 +1,24 @@
+note_index:
+    path:     /
+    defaults: { _controller: "PlatBundle:Note:index" }
+    methods:  GET
+
+note_show:
+    path:     /{id}/show
+    defaults: { _controller: "PlatBundle:Note:show" }
+    methods:  GET
+
+note_new:
+    path:     /new
+    defaults: { _controller: "PlatBundle:Note:new" }
+    methods:  [GET, POST]
+
+note_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PlatBundle:Note:edit" }
+    methods:  [GET, POST]
+
+note_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PlatBundle:Note:delete" }
+    methods:  DELETE

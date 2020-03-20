@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Liste des ustensiles </h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Icone</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for ustensile in ustensiles %}
+            <tr>
+                <td><a href="{{ path('ustensiles_show', { 'id': ustensile.id }) }}">{{ ustensile.id }}</a></td>
+                <td>{{ ustensile.nom }}</td>
+                <td><img src="{{ asset('images/iconeUstensiles/')~ustensile.icone }}" width="50"></td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('ustensiles_show', { 'id': ustensile.id }) }}">afficher</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('ustensiles_edit', { 'id': ustensile.id }) }}">modifier</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('ustensiles_new') }}">Ajouter un nouveau ustensile</a>
+        </li>
+    </ul>
+{% endblock %}

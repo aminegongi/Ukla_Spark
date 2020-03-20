@@ -1,0 +1,24 @@
+typeplat_index:
+    path:     /
+    defaults: { _controller: "PlatBundle:Typeplat:index" }
+    methods:  GET
+
+typeplat_show:
+    path:     /{id}/show
+    defaults: { _controller: "PlatBundle:Typeplat:show" }
+    methods:  GET
+
+typeplat_new:
+    path:     /new
+    defaults: { _controller: "PlatBundle:Typeplat:new" }
+    methods:  [GET, POST]
+
+typeplat_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PlatBundle:Typeplat:edit" }
+    methods:  [GET, POST]
+
+typeplat_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PlatBundle:Typeplat:delete" }
+    methods:  DELETE

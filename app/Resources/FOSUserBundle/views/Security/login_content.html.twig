@@ -1,0 +1,67 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{#{% trans_default_domain 'FOSUserBundle' %}
+
+{% if error %}
+    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+{% endif %}
+
+<form action="{{ path("fos_user_security_check") }}" method="post">
+    {% if csrf_token %}
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+    {% endif %}
+
+    <div class="form-group">
+        <label>Username</label>
+        <input class="au-input au-input--full" type="text" id="username" name="_username" placeholder="{{ last_username}}" value="{{ last_username }}" required="required"autocomplete="username">
+    </div>
+
+    <div class="form-group">
+        <label>Password</label>
+        <input class="au-input au-input--full" type="password" name="password" id="password" equired="required" autocomplete="current-password" >
+    </div>
+
+
+
+    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+    <label for="remember_me">{{ 'remember me'|trans }}</label>
+
+    <input type="submit" class="au-btn au-btn--block au-btn--green m-b-20"  id="_submit" name="_submit" value="Login" />
+</form>#}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% if error %}
+    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+{% endif %}
+
+<form action="{{ path("fos_user_security_check") }}" method="post">
+    {% if csrf_token %}
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+    {% endif %}
+
+    <label for="username">{{ 'username'|trans }}</label>
+    <input class="au-input au-input--full" type="text" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" />
+
+    <label for="password">{{ 'password'|trans }}</label>
+    <input class="au-input au-input--full" type="password" id="password" name="_password" required="required" autocomplete="current-password" />
+
+    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+    <label for="remember_me">{{ 'remember me'|trans }}</label>
+
+    <input class="au-btn au-btn--block au-btn--green m-b-20" type="submit" id="_submit" name="_submit" value="{{ 'login'|trans }}" />
+</form>
+

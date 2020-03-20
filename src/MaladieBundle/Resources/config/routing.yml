@@ -1,0 +1,24 @@
+maladie_homepage:
+    path:     /
+    defaults: { _controller: MaladieBundle:Default:index }
+
+addMaladie:
+    path:     /addMaladie
+    defaults: { _controller: MaladieBundle:Maladie:addMaladie }
+
+displayMaladie:
+    path:     /displayMaladie
+    defaults: { _controller: MaladieBundle:Maladie:displayMaladie }
+
+editMaladie:
+    path:     /editMaladie/{id}
+    defaults: { _controller: MaladieBundle:Maladie:editMaladie }
+
+removeMaladie:
+    path:     /removeMaladie/{id}
+    defaults: { _controller: MaladieBundle:Maladie:removeMaladie }
+
+affecterMaladie:
+    path:     /affecterMaladie
+    defaults: { _controller: MaladieBundle:Maladie:affecterMaladie }
+

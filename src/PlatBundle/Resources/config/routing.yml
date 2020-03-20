@@ -1,0 +1,23 @@
+plat_plat:
+    resource: "@PlatBundle/Resources/config/routing/plat.yml"
+    prefix:   /
+
+plat_typeplat:
+    resource: "@PlatBundle/Resources/config/routing/typeplat.yml"
+    prefix:   /typeplat
+
+plat_note:
+    resource: "@PlatBundle/Resources/config/routing/note.yml"
+    prefix:   /note
+
+plat_specialite:
+    resource: "@PlatBundle/Resources/config/routing/specialite.yml"
+    prefix:   /specialite
+
+plat_ustensiles:
+     resource: "@PlatBundle/Resources/config/routing/ustensiles.yml"
+     prefix:   /ustensiles
+
+plat_homepage:
+    path:     /testplat
+    defaults: { _controller: PlatBundle:Default:index }
